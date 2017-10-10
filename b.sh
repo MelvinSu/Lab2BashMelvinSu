@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo "Melvin Su"
+echo $1$2
