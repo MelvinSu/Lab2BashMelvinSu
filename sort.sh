@@ -1,9 +1,9 @@
 #!/bin/bash
 
 ArrayList=(1 23 64 8 39 88 20 9 13 44)
-for (( i = 0; i <= 9 ; i++))
+for (( i = 0; i < ${#ArrayList[@]} ; i++))
 do
-	for (( j = $i; j <= 9; j++))
+	for (( j = i; j < ${#ArrayList[@]}; j++))
 	do
 		if [ ${ArrayList[$j]} -lt ${ArrayList[$i]} ]; then
 		a="${ArrayList[$j]}"
